@@ -431,7 +431,7 @@ while True:
                                 
 						elif msg.get("text").startswith("عکس بده") or msg.get("text").startswith("عکس"):
 							try:
-								bot.sendMessage(target, "بشین تا بدم🤭", message_id=msg.get("message_id"))
+								bot.sendMessage(target, "عکس لختی دا؟", message_id=msg.get("message_id"))
 							except:
 								print("err si")
                                 
@@ -443,19 +443,19 @@ while True:
                                 
 						elif msg.get("text").startswith("بای") or msg.get("text").startswith("باحی"):
 							try:
-								bot.sendMessage(target, "سیک شیک", message_id=msg.get("message_id"))
+								bot.sendMessage(target, "خدا پشت و پناهت سید 🖐", message_id=msg.get("message_id"))
 							except:
 								print("err sido")
                                 
 						elif msg.get("text").startswith("فعلا") or msg.get("text").startswith("فعلن"):
 							try:
-								bot.sendMessage(target, "بای بای", message_id=msg.get("message_id"))
+								bot.sendMessage(target, "خدا پشت و پناهت دا 🖐", message_id=msg.get("message_id"))
 							except:
 								print("err sise")
                                 
-						elif msg.get("text").startswith("سجی") or msg.get("text").startswith("سجی"):
+						elif msg.get("text").startswith("علی") or msg.get("text").startswith("علی گیمر"):
 							try:
-								bot.sendMessage(target, "جونم", message_id=msg.get("message_id"))
+								bot.sendMessage(target, "اگه کاری باهاش داری پیوی بهش بگو \n @AIi_Gamer :)", message_id=msg.get("message_id"))
 							except:
 								print("err sichar")
                                 
