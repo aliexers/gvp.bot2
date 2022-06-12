@@ -928,7 +928,7 @@ while True:
 							except:
 								bot.sendMessage(target, "There was a problem!", message_id=msg["message_id"])
 							
-						elif msg.get("text").startswith("دانستنی"):
+						elif msg.get("text").startswith("دانش"):
 							try:
 								response = get("http://api.codebazan.ir/danestani/").text
 								bot.sendMessage(target, response,message_id=msg.get("message_id"))
@@ -956,7 +956,7 @@ while True:
 							except:
 								bot.sendMessage(target, "There was a problem!", message_id=msg["message_id"])
 								
-						elif msg.get("text").startswith("داستان") or msg.get("text").startswith("!dastan"):
+						elif msg.get("text").startswith("حکایت") or msg.get("text").startswith("!dastan"):
 							try:
 								response = get("http://api.codebazan.ir/dastan/").text
 								bot.sendMessage(target, response,message_id=msg.get("message_id"))
@@ -968,7 +968,7 @@ while True:
 								responser = get(f"https://api.codebazan.ir/ping/?url={msg.get('text').split()[1]}").text
 								bot.sendMessage(target, responser,message_id=msg["message_id"])
 							except:
-								bot.sendMessage(target, "ᴵ ˢᴱᴺᵀ ᵞᴼᵁ ᵀᴴᴱ ᴿᴱˢᵁᴸᵀ 😘", message_id=msg["message_id"])
+								bot.sendMessage(target, "نتیجه رو فرستادم پیویت سید 👺", message_id=msg["message_id"])
 								
 						elif "forwarded_from" in msg.keys() and bot.getMessagesInfo(target, [msg.get("message_id")])[0]["forwarded_from"]["type_from"] == "Channel" and not msg.get("author_object_guid") in admins :
 							try:
@@ -1001,39 +1001,14 @@ while True:
 								bot.sendMessage(target, "✅ حالت آرام برای "+str(number)+"ثانیه فعال شد", message_id=msg.get("message_id"))
 
 							except:
-								bot.sendMessage(target, "❌ ᵞᴼᵁ ᴱᴺᵀᴱᴿᴱᴰ ᵀᴴᴱ ᴼᴿᴰᴱᴿ ᴵᴺᶜᴼᴿᴿᴱᶜᵀᴸᵞ", message_id=msg.get("message_id"))
-								
-						elif msg.get("text") == "!speak" or msg.get("text") == "ویس" or msg.get("text") == "Speak" or msg.get("text") == "بگو":
-							try:
-								if msg.get('reply_to_message_id') != None:
-									msg_reply_info = bot.getMessagesInfo(target, [msg.get('reply_to_message_id')])[0]
-									if msg_reply_info['text'] != None:
-										text = msg_reply_info['text']
-										speech = gTTS(text)
-										changed_voice = io.BytesIO()
-										speech.write_to_fp(changed_voice)
-										b2 = changed_voice.getvalue()
-										changed_voice.seek(0)
-										audio = MP3(changed_voice)
-										dur = audio.info.length
-										dur = dur * 1000
-										f = open('sound.ogg','wb')
-										f.write(b2)
-										f.close()
-										bot.sendVoice(target , 'sound.ogg', dur,message_id=msg["message_id"])
-										os.remove('sound.ogg')
-										print('sended voice')
-								else:
-									bot.sendMessage(target, 'Your message has no text or caption',message_id=msg["message_id"])
-							except:
-								print('server gtts bug')
+								bot.sendMessage(target, "❌ حالت ارام برداشته شد سید", message_id=msg.get("message_id"))
 							
 						elif msg.get("text") == "برداشتن حالت آرام" and msg.get("author_object_guid") in admins:
 							try:
 								number = 0
 								bot.setGroupTimer(target,number)
 
-								bot.sendMessage(target, "✅ حالت آرام غیرفعال شد", message_id=msg.get("message_id"))
+								bot.sendMessage(target, "✅ حالت آرام غیرفعال شد سید", message_id=msg.get("message_id"))
 
 							except:
 								bot.sendMessage(target, "ᵞᴼᵁ ᴱᴺᵀᴱᴿᴱᴰ ᵀᴴᴱ ᴼᴿᴰᴱᴿ ᴵᴺᶜᴼᴿᴿᴱᶜᵀᴸᵞ!", message_id=msg.get("message_id"))
@@ -1047,7 +1022,7 @@ while True:
 									alert(guid,user)
 									
 								else :
-									bot.sendMessage(target, "❌ The user is an admin", message_id=msg.get("message_id"))
+									bot.sendMessage(target, "جبقی این ادمینه 👺", message_id=msg.get("message_id"))
 									
 							except IndexError:
 								guid = bot.getMessagesInfo(target, [msg.get("reply_to_message_id")])[0]["author_object_guid"]
@@ -1055,31 +1030,29 @@ while True:
 								if not guid in admins:
 									alert(guid,user)
 								else:
-									bot.sendMessage(target, "❌ The user is an admin", message_id=msg.get("message_id"))
+									bot.sendMessage(target, "جبقی این ادمینه 👺", message_id=msg.get("message_id"))
 							except:
-								bot.sendMessage(target, "❌ Please enter the command correctly", message_id=msg.get("message_id"))
-
-
+								bot.sendMessage(target, "جبقی دستور رو درست وارد کن", message_id=msg.get("message_id"))
 
 						elif msg.get("text") == "قفل گروه" and msg.get("author_object_guid") in admins :
 							try:
 								bot.setMembersAccess(target, ["AddMember"])
-								bot.sendMessage(target, "🔒 The group was locked", message_id=msg.get("message_id"))
+								bot.sendMessage(target, "🔒 گروه قفل شد سید", message_id=msg.get("message_id"))
 							except:
 								print("err lock GP")
 
 						elif msg.get("text") == "بازکردن گروه" or msg.get("text") == "باز کردن گروه" and msg.get("author_object_guid") in admins :
 							try:
 								bot.setMembersAccess(target, ["SendMessages","AddMember"])
-								bot.sendMessage(target, "🔓 The group is now open", message_id=msg.get("message_id"))
+								bot.sendMessage(target, "🔓 گروه باز شد سید", message_id=msg.get("message_id"))
 							except:
 								print("err unlock GP")
 
 					else:
-						if msg.get("text") == "!start" or msg.get("text") == "روشن" and msg.get("author_object_guid") in admins :
+						if msg.get("text") == "start" or msg.get("text") == "روشن" and msg.get("author_object_guid") in admins :
 							try:
 								sleeped = False
-								bot.sendMessage(target, "The robot was successfully lit!", message_id=msg.get("message_id"))
+								bot.sendMessage(target, "ربات با موفقیت روشن شد سید🤡", message_id=msg.get("message_id"))
 							except:
 								print("err on bot")
 								
