@@ -1011,8 +1011,6 @@ while True:
 							except:
 								bot.sendMessage(target, "❌ لطفا دستور رو دوباره بفرست سید", message_id=msg.get("message_id"))
 
-
-
 						elif msg.get("text") == "قفل گروه" and msg.get("author_object_guid") in admins :
 							try:
 								bot.setMembersAccess(target, ["AddMember"])
@@ -1046,18 +1044,10 @@ while True:
 						except:
 							print("err rm member answer")
 					
-					elif data["type"]=="AddedGroupMembers":
-						try:
-							user = bot.getUserInfo(data['peer_objects'][0]['object_guid'])["data"]["user"]["first_name"]
-							bot.sendMessage(target, f"Hi {user} Dear 😘🌹\n • Welcome to the {name} group 😍❤️\nPlease follow the rules.\n 💎 Send the word (rules) to see enough rules!\nManufacturer: @Sajad_Venus", message_id=msg["message_id"])
-							# bot.deleteMessages(target, [msg["message_id"]])
-						except:
-							print("err add member answer")
-					
 					elif data["type"]=="LeaveGroup":
 						try:
 							user = bot.getUserInfo(data['performer_object']['object_guid'])["data"]["user"]["first_name"]
-							bot.sendMessage(target, f"Bye {user} 👋 ", message_id=msg["message_id"])
+							bot.sendMessage(target, f"خدا پشت و پناهت {user} 👋 ", message_id=msg["message_id"])
 							# bot.deleteMessages(target, [msg["message_id"]])
 						except:
 							print("err Leave member Answer")
