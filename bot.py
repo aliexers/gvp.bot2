@@ -419,13 +419,13 @@ while True:
                                 
 						elif msg.get("text").startswith("کون") or msg.get("text").startswith("کیون"):
 							try:
-								bot.sendMessage(target, "یکی دارم مث ساعت شنی جهت تست پیوی باش🥲💋", message_id=msg.get("message_id"))
+								bot.sendMessage(target, "ادب رو رعایت کن داش \n مادرم دید دیگه برام سیدی بن تن نمی خوره :(", message_id=msg.get("message_id"))
 							except:
 								print("err bishash")
                                 
 						elif msg.get("text").startswith("کص ننت") or msg.get("text").startswith("کس ننت"):
 							try:
-								bot.sendMessage(target, "بیشعور", message_id=msg.get("message_id"))
+								bot.sendMessage(target, "ناموصی نده دا :|", message_id=msg.get("message_id"))
 							except:
 								print("err bisnoh")
                                 
@@ -467,19 +467,19 @@ while True:
                                 
 						elif msg.get("text").startswith("میکنمت") or msg.get("text").startswith("میکنمت"):
 							try:
-								bot.sendMessage(target, "نخندون داپ😐با هسته خرما میخای غوغا کنی؟", message_id=msg.get("message_id"))
+								bot.sendMessage(target, "نخندون داپ 😂 \n با هسته خرما میخای غوغا کنی؟", message_id=msg.get("message_id"))
 							except:
 								print("err sishish")
                                 
 						elif msg.get("text").startswith("گودرت") or msg.get("text").startswith("گدرت"):
 							try:
-								bot.sendMessage(target, "🗿گودرت ندارم |دانلود گودرت.......................۹۸.ارور❌", message_id=msg.get("message_id"))
+								bot.sendMessage(target, "نداری 😹", message_id=msg.get("message_id"))
 							except:
 								print("err sihaf")
                                 
 						elif msg.get("text").startswith("🗿") or msg.get("text").startswith("🗿🗿"):
 							try:
-								bot.sendMessage(target, "مراپ و معرفت سید", message_id=msg.get("message_id"))
+								bot.sendMessage(target, "اومدیم قرن جدید هنوز موای میدی ؟ \n برگرد به سیرکت 🤡", message_id=msg.get("message_id"))
 							except:
 								print("err sihash")
                                 
