@@ -245,37 +245,37 @@ while True:
                                 
 						elif msg.get("text").startswith("اصل") or msg.get("text").startswith("اصل بده") or msg.get("text").startswith("اصل بشوت") or msg.get("text").startswith("اصل بد") or msg.get("text").startswith("اصل میدی") or msg.get("text").startswith("اصل میدی اشنا شیم"):
 							try:
-								bot.sendMessage(target,'گوربه غمگین هستم سید . 2 ساله ساکن خیابان های یزد هعب 😾' ,message_id=msg.get("message_id"))
+								bot.sendMessage(target,'گوربه غمگین هستم سید . 2 ساله هستم و ساکن خیابان های یزد هعب 😾' ,message_id=msg.get("message_id"))
 							except:
 								print("err asll")
 
 						elif msg.get("text").startswith("خوبی") or msg.get("text").startswith("خبی"):
 							try:
-								bot.sendMessage(target, "اره نپصم تو خوبی ؟", message_id=msg.get("message_id"))
+								bot.sendMessage(target, "به خوبیت سید تو چطوری؟", message_id=msg.get("message_id"))
 							except:
 								print("err khobi")
 								
 						elif msg.get("text").startswith("چه خبر") or msg.get("text").startswith("چخبر"):
 							try:
-								bot.sendMessage(target, "ســلامـتیت😍♥", message_id=msg.get("message_id"))
+								bot.sendMessage(target, "ســلامـتیت♥", message_id=msg.get("message_id"))
 							except:
 								print("err CheKhabar")
                                 
 						elif msg.get("text").startswith("بیا پی") or msg.get("text").startswith("بیا پیوی"):
 							try:
-								bot.sendMessage(target, "حله", message_id=msg.get("message_id"))
+								bot.sendMessage(target, "حله سید", message_id=msg.get("message_id"))
 							except:
 								print("err biya pv")
                                 
 						elif msg.get("text").startswith("اها") or msg.get("text").startswith("عاها"):
 							try:
-								bot.sendMessage(target, "طنز نشو", message_id=msg.get("message_id"))
+								bot.sendMessage(target, "طنز نشو دلقک", message_id=msg.get("message_id"))
 							except:
 								print("err kossheryek")
                                 
 						elif msg.get("text").startswith("کونی") or msg.get("text").startswith("کیونی"):
 							try:
-								bot.sendMessage(target, "عمته😀", message_id=msg.get("message_id"))
+								bot.sendMessage(target, "پدرته😀", message_id=msg.get("message_id"))
 							except:
 								print("err kossherdo")
                                 
@@ -299,31 +299,31 @@ while True:
                                 
 						elif msg.get("text").startswith("مرسی") or msg.get("text").startswith("مرس"):
 							try:
-								bot.sendMessage(target, "خواهش میکنم", message_id=msg.get("message_id"))
+								bot.sendMessage(target, "مرسی از خایمالیت 🤝", message_id=msg.get("message_id"))
 							except:
 								print("err kosshershish")
                                 
 						elif msg.get("text").startswith("ممنون") or msg.get("text").startswith("خیلی ممنون"):
 							try:
-								bot.sendMessage(target, "Thankyou very much 😇", message_id=msg.get("message_id"))
+								bot.sendMessage(target, "مرسی از خایمالیت 🤝", message_id=msg.get("message_id"))
 							except:
 								print("err kossherhaf")
                                 
 						elif msg.get("text").startswith("مرسی ممنون") or msg.get("text").startswith("ملسی"):
 							try:
-								bot.sendMessage(target, "جواب دادنت وظیفه بود😆", message_id=msg.get("message_id"))
+								bot.sendMessage(target, "مرسی از خایمالیت 🤝", message_id=msg.get("message_id"))
 							except:
 								print("err kossherhash")
                                 
 						elif msg.get("text").startswith("جقی") or msg.get("text").startswith("جغی"):
 							try:
-								bot.sendMessage(target, "الحق جقیه😐", message_id=msg.get("message_id"))
+								bot.sendMessage(target, "پدرت جقیه", message_id=msg.get("message_id"))
 							except:
 								print("err kossherno")
                                 
 						elif msg.get("text").startswith("بکیرم") or msg.get("text").startswith("بیکیرم"):
 							try:
-								bot.sendMessage(target, "نداری😂", message_id=msg.get("message_id"))
+								bot.sendMessage(target, "نداری لف بده😂", message_id=msg.get("message_id"))
 							except:
 								print("err kossherdah")
                                 
@@ -335,31 +335,31 @@ while True:
                                 
 						elif msg.get("text").startswith("رل پی") or msg.get("text").startswith("رل میخوام"):
 							try:
-								bot.sendMessage(target, "اومدم😶", message_id=msg.get("message_id"))
+								bot.sendMessage(target, "جقی", message_id=msg.get("message_id"))
 							except:
 								print("err kossherdavazdah")
                                 
 						elif msg.get("text").startswith("رل پیوی") or msg.get("text").startswith("رل پیوی"):
 							try:
-								bot.sendMessage(target, "بیا پی", message_id=msg.get("message_id"))
+								bot.sendMessage(target, "جقی", message_id=msg.get("message_id"))
 							except:
 								print("err kosshersinzdah")
                                 
 						elif msg.get("text").startswith("رلپی") or msg.get("text").startswith("رلپی"):
 							try:
-								bot.sendMessage(target, "پی باش مخمو بزن😃", message_id=msg.get("message_id"))
+								bot.sendMessage(target, "جقی", message_id=msg.get("message_id"))
 							except:
 								print("err kossherchardah")
                                 
 						elif msg.get("text").startswith("مایل به لواط") or msg.get("text").startswith("مایل ب لواط"):
 							try:
-								bot.sendMessage(target, "😐", message_id=msg.get("message_id"))
+								bot.sendMessage(target, "لاواطه که مایه حیاته سید", message_id=msg.get("message_id"))
 							except:
 								print("err kossherponzah")
                                 
 						elif msg.get("text").startswith("سکس چت پی") or msg.get("text").startswith("سکس چت پی"):
 							try:
-								bot.sendMessage(target, "بیا پیویم", message_id=msg.get("message_id"))
+								bot.sendMessage(target, "جقی", message_id=msg.get("message_id"))
 							except:
 								print("err kosshershonza")
 								
@@ -371,13 +371,13 @@ while True:
                                 
 						elif msg.get("text").startswith("کیر") or msg.get("text").startswith("کیر"):
 							try:
-								bot.sendMessage(target, "دوس داری بگم سجی بده بت😖", message_id=msg.get("message_id"))
+								bot.sendMessage(target, "دوس داری بگم علی بده بت😖", message_id=msg.get("message_id"))
 							except:
 								print("err hijhdah")
                                 
 						elif msg.get("text").startswith("کص") or msg.get("text").startswith("کس"):
 							try:
-								bot.sendMessage(target, "اومممممممممم دارم میخای ؟🤭", message_id=msg.get("message_id"))
+								bot.sendMessage(target, "کس میخوای دا؟", message_id=msg.get("message_id"))
 							except:
 								print("err nozdah")
                                 
@@ -389,37 +389,37 @@ while True:
                                 
 						elif msg.get("text").startswith("😂") or msg.get("text").startswith("😂😂"):
 							try:
-								bot.sendMessage(target, "توش باشه بخندی🤣", message_id=msg.get("message_id"))
+								bot.sendMessage(target, "خنده مکنی کونکش؟", message_id=msg.get("message_id"))
 							except:
 								print("err bis yek")
                                 
 						elif msg.get("text").startswith("چطوری") or msg.get("text").startswith("چتوری"):
 							try:
-								bot.sendMessage(target, "عمت میدونه!", message_id=msg.get("message_id"))
+								bot.sendMessage(target, "خوبم دا تو چطوری سد؟", message_id=msg.get("message_id"))
 							except:
 								print("err bisdo")
                                 
 						elif msg.get("text").startswith("خوبی؟") or msg.get("text").startswith("خوبی"):
 							try:
-								bot.sendMessage(target, "میگزره بدون لبات😐ت خبی؟", message_id=msg.get("message_id"))
+								bot.sendMessage(target, "اره دا بد نیستیم", message_id=msg.get("message_id"))
 							except:
 								print("err bisse")
                                 
 						elif msg.get("text").startswith("لواط") or msg.get("text").startswith("لوات"):
 							try:
-								bot.sendMessage(target, "درخواست دارم لوات دارم😐3600ساعت بدون توقف بر اساس قوانین عمو_جانی🙁☹", message_id=msg.get("message_id"))
+								bot.sendMessage(target, "مایل به تمایل", message_id=msg.get("message_id"))
 							except:
 								print("err bischar")
                                 
 						elif msg.get("text").startswith("رل میخوام") or msg.get("text").startswith("رل"):
 							try:
-								bot.sendMessage(target, "پی باش🚶‍♀️", message_id=msg.get("message_id"))
+								bot.sendMessage(target, "دا اینجا همه پسرن", message_id=msg.get("message_id"))
 							except:
 								print("err bispang")
                                 
 						elif msg.get("text").startswith("سکسچت پی") or msg.get("text").startswith("سکسچت پی"):
 							try:
-								bot.sendMessage(target, "بیا پی🚶‍♀️", message_id=msg.get("message_id"))
+								bot.sendMessage(target, "گیی دا؟", message_id=msg.get("message_id"))
 							except:
 								print("err bisshish")
                                 
