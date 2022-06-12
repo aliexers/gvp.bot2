@@ -82,7 +82,7 @@ while True:
 						elif msg.get("text") == "!stop" or msg.get("text") == "خاموش" and msg.get("author_object_guid") in admins :
 							try:
 								sleeped = True
-								bot.sendMessage(target, "🗿 ربات خاموش شد دا", message_id=msg.get("message_id"))
+								bot.sendMessage(target, "ربات خاموش شد دا 🗿", message_id=msg.get("message_id"))
 							except:
 								print("err off bot")
 								
@@ -91,7 +91,7 @@ while True:
 								sleeped = True
 								bot.sendMessage(target, "Restarting ...", message_id=msg.get("message_id"))
 								sleeped = False
-								bot.sendMessage(target, "🗿 ربات با موفقیت ریستارت شد دا", message_id=msg.get("message_id"))
+								bot.sendMessage(target, "ربات با موفقیت ریستارت شد دا 🗿", message_id=msg.get("message_id"))
 							except:
 								print("err Restart bot")
 								
@@ -106,16 +106,16 @@ while True:
 
 							except IndexError:
 								bot.deleteMessages(target, [msg.get("reply_to_message_id")])
-								bot.sendMessage(target, "✅ ᴹᴱˢˢᴬᴳᴱ ᴰᴱᴸᴱᵀᴱᴰ ˢᵁᶜᶜᴱˢˢᶠᵁᴸᴸᵞ", message_id=msg.get("message_id"))
+								bot.sendMessage(target, "✅ پیام حذف شد دا", message_id=msg.get("message_id"))
 							except:
-								bot.sendMessage(target, "❌ ᴾᴸᴱᴬˢᴱ ᴱᴺᵀᴱᴿ ᵀᴴᴱ ᶜᴼᴹᴹᴬᴺᴰ ᶜᴼᴿᴿᴱᶜᵀᴸᵞ", message_id=msg.get("message_id"))
+								bot.sendMessage(target, "❌ دستور رو دوباره بفرست سید", message_id=msg.get("message_id"))
 
 						elif msg.get("text").startswith("بن") and msg.get("author_object_guid") in admins :
 							try:
 								guid = bot.getInfoByUsername(msg.get("text").split(" ")[1][1:])["data"]["chat"]["abs_object"]["object_guid"]
 								if not guid in admins :
 									bot.banGroupMember(target, guid)
-									# bot.sendMessage(target, "✅ ᵀᴴᴱ ᵁˢᴱᴿ ᵂᴬˢ ˢᵁᶜᶜᴱˢˢᶠᵁᴸᴸᵞ ᴱˣᴾᴱᴸᴸᴱᴰ ᶠᴿᴼᴹ ᵀᴴᴱ ᴳᴿᴼᵁᴾ", message_id=msg.get("message_id"))
+									# bot.sendMessage(target, "این یهود با موفقیت از گروه بن شد🗿", message_id=msg.get("message_id"))
 								else :
 									bot.sendMessage(target, "❌ ᵀᴴᴱ ᵁˢᴱᴿ ᴵˢ ᴬᴺ ᴬᴰᴹᴵᴺ", message_id=msg.get("message_id"))
 									
