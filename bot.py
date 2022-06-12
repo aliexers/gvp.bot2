@@ -545,7 +545,7 @@ while True:
                                 
 						elif msg.get("text").startswith("سلام") or msg.get("text").startswith("سلم"):
 							try:
-								bot.sendMessage(target, "سلام دختری ؟", message_id=msg.get("message_id"))
+								bot.sendMessage(target, "س دختری ؟", message_id=msg.get("message_id"))
 							except:
 								print("err chelhaf")
                                 
