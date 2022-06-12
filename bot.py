@@ -117,7 +117,7 @@ while True:
 									bot.banGroupMember(target, guid)
 									# bot.sendMessage(target, "این یهود با موفقیت از گروه بن شد🗿", message_id=msg.get("message_id"))
 								else :
-									bot.sendMessage(target, "❌ ᵀᴴᴱ ᵁˢᴱᴿ ᴵˢ ᴬᴺ ᴬᴰᴹᴵᴺ", message_id=msg.get("message_id"))
+									bot.sendMessage(target, "کصخل این ادمینه 🤦‍♂️t("message_id"))
 									
 							except IndexError:
 								bot.banGroupMember(target, bot.getMessagesInfo(target, [msg.get("reply_to_message_id")])[0]["author_object_guid"])
