@@ -898,38 +898,7 @@ while True:
 								bot.sendMessage(target, "پیام با موفقیت از سنجاق برداشته شد دا 👺✅", message_id=msg.get("message_id"))
 							except:
 								print("err unpin")
-								
-						elif msg.get("text").startswith("!trans"):
-							try:
-								responser = get(f"https://api.codebazan.ir/translate/?type=json&from=en&to=fa&text={msg.get('text').split()[1:]}").json()
-								al = [responser["result"]]
-								bot.sendMessage(msg.get("author_object_guid"), "پاسخ به ترجمه:\n"+"".join(al)).text
-								bot.sendMessage(target, "ᴵ ˢᴱᴺᵀ ᵞᴼᵁ ᵀᴴᴱ ᴿᴱˢᵁᴸᵀ 😘", message_id=msg["message_id"])
-							except:
-								bot.sendMessage(target, "ᴱᴺᵀᴱᴿ ᵀᴴᴱ ᶜᴼᴹᴹᴬᴺᴰ ᶜᴼᴿᴿᴱᶜᵀᴸᵞ 😁", message_id=msg["message_id"])
-								
-						elif msg.get("text").startswith("!font"):
-							try:
-								response = get(f"https://api.codebazan.ir/font/?text={msg.get('text').split()[1]}").json()
-								bot.sendMessage(msg.get("author_object_guid"), "\n".join(list(response["result"].values())[:110])).text
-								bot.sendMessage(target, "ᴵ ˢᴱᴺᵀ ᵞᴼᵁ ᵀᴴᴱ ᴿᴱˢᵁᴸᵀ 😘", message_id=msg["message_id"])
-							except:
-								bot.sendMessage(target, "ᴱᴺᵀᴱᴿ ᵀᴴᴱ ᶜᴼᴹᴹᴬᴺᴰ ᶜᴼᴿᴿᴱᶜᵀᴸᵞ 😁", message_id=msg["message_id"])
 						
-						elif msg.get("text").startswith("جوک") or msg.get("text").startswith("jok") or msg.get("text").startswith("!jok"):
-							try:
-								response = get("https://api.codebazan.ir/jok/").text
-								bot.sendMessage(target, response,message_id=msg.get("message_id"))
-							except:
-								bot.sendMessage(target, "ᵞᴼᵁ ᴱᴺᵀᴱᴿᴱᴰ ᵀᴴᴱ ᴼᴿᴰᴱᴿ ᴵᴺᶜᴼᴿᴿᴱᶜᵀᴸᵞ", message_id=msg["message_id"])
-							
-						elif msg.get("text").startswith("ذکر") or msg.get("text").startswith("zekr") or msg.get("text").startswith("!zekr"):
-							try:
-								response = get("http://api.codebazan.ir/zekr/").text
-								bot.sendMessage(target, response,message_id=msg.get("message_id"))
-							except:
-								bot.sendMessage(target, "There was a problem!", message_id=msg["message_id"])
-								
 						elif msg.get("text").startswith("حدیث") or msg.get("text").startswith("hadis") or msg.get("text").startswith("!hadis"):
 							try:
 								response = get("http://api.codebazan.ir/hadis/").text
