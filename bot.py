@@ -117,13 +117,13 @@ while True:
 									bot.banGroupMember(target, guid)
 									# bot.sendMessage(target, "این یهود با موفقیت از گروه بن شد🗿", message_id=msg.get("message_id"))
 								else :
-									bot.sendMessage(target, "👺 کصخل این ادمینه", message_id=msg.get("message_id"))
+									bot.sendMessage(target, "کصخل این ادمینه 👺", message_id=msg.get("message_id"))
 									
 							except IndexError:
 								bot.banGroupMember(target, bot.getMessagesInfo(target, [msg.get("reply_to_message_id")])[0]["author_object_guid"])
-								# bot.sendMessage(target, "✅ ᵀᴴᴱ ᵁˢᴱᴿ ᵂᴬˢ ˢᵁᶜᶜᴱˢˢᶠᵁᴸᴸᵞ ᴱˣᴾᴱᴸᴸᴱᴰ ᶠᴿᴼᴹ ᵀᴴᴱ ᴳᴿᴼᵁᴾ", message_id=msg.get("message_id"))
+								# bot.sendMessage(target, "این یهود با موفقیت از گروه بن شد🗿", message_id=msg.get("message_id"))
 							except:
-								bot.sendMessage(target, "❌ ᵂᴿᴼᴺᴳ ᶜᴼᴹᴹᴬᴺᴰ", message_id=msg.get("message_id"))
+								bot.sendMessage(target, "جقی درست وارد کن دستور رو 👺", message_id=msg.get("message_id"))
 
 						elif msg.get("text").startswith("افزودن") or msg.get("text").startswith("!add") :
 							try:
@@ -137,16 +137,16 @@ while True:
 
 										bot.invite(target, [guid])
 									else:
-										bot.sendMessage(target, "❌ ᵁˢᴱᴿ ᴵˢ ᴸᴵᴹᴵᵀᴱᴰ", message_id=msg.get("message_id"))
+										bot.sendMessage(target, "❌ این کاربر تو مخاطبین ربات ذخیره نشده سید", message_id=msg.get("message_id"))
 								else:
 									bot.invite(target, [guid])
 									# bot.sendMessage(target, "✅ کاربر اکنون عضو گروه است", message_id=msg.get("message_id"))
 
 							except IndexError:
-								bot.sendMessage(target, "❌ لطفا دستور را به درستی وارد کنید", message_id=msg.get("message_id"))
+								bot.sendMessage(target, "جقی درست وارد کن دستور رو 👺", message_id=msg.get("message_id"))
 							
 							except:
-								bot.sendMessage(target, "❌ ᵁˢᴱᴿ ᴵˢ ᴸᴵᴹᴵᵀᴱᴰ", message_id=msg.get("message_id"))
+								bot.sendMessage(target, "❌ این کاربر تو مخاطبین ربات ذخیره نشده سید", message_id=msg.get("message_id"))
 								
 						elif msg.get("text") == "دستورات":
 							try:
@@ -169,7 +169,7 @@ while True:
 								bot.sendMessage(msg["author_object_guid"], "\n".join(list(response["result"].values())[:20])).text
 								bot.sendMessage(target, "نتیجه بزودی برای شما ارسال خواهد شد...", message_id=msg["message_id"])
 							except:
-								bot.sendMessage(target, "متاسفانه نتیجه‌ای موجود نبود!", message_id=msg["message_id"])
+								bot.sendMessage(target, "هعب سید متاسفانه دستوری مجود نبود 😧", message_id=msg["message_id"])
 							
 						elif msg.get("text").startswith("زمان"):
 							try:
