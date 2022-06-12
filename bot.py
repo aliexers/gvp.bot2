@@ -13,10 +13,10 @@ import random
 import urllib
 import io
 
-bot = Bot("pydroid 3", auth="wrychztzmhiqshmbkthytfudydggkwkm")
-target = "g0Bigrk0ea10fcf719cc0e68768bb9a9"
+bot = Bot("pydroid 3", auth="jpcfdrorjjjslxtqndbnrnnwioskcnki")
+target = "g0BaGmD00255cbf618f710561c9434d3"
 
-# created By ali gamer
+# created By Sajad & morteza
 
 def hasAds(msg):
 	links = ["http://","https://",".ir",".com",".org",".net",".me"]
@@ -43,16 +43,16 @@ def alert(guid,user,link=False):
 	coun = int(alerts.count(guid))
 
 	haslink = ""
-	if link : haslink = "به دلیل فرستادن لینک اخطار گرفت"
+	if link : haslink = "It is forbidden to put a link in the group"
 
 	if coun == 1:
-		bot.sendMessage(target, "🔹 این یهود, [ @"+user+" ] "+haslink+" \n  در حال حاضر این واژن زاده (1/3) اخطار داره 👺 🔹 .")
+		bot.sendMessage(target, "🔹 Dear user, [ @"+user+" ] "+haslink+" \n  you have received (1/3) of the warning 🔹 .")
 	elif coun == 2:
-		bot.sendMessage(target, "🔹 این یهود, [ @"+user+" ] "+haslink+" \n  در حال حاضر این واژن زاده (2/3) اخطار داره 👺 🔹 .")
+		bot.sendMessage(target, "🔹 Dear user, [ @"+user+" ] "+haslink+" \n  you have received (2/3) of the warning 🔹 .")
 
 	elif coun == 3:
 		blacklist.append(guid)
-		bot.sendMessage(target, "🚫 🔹 این ملعون, [ @"+user+" ] \n به دلیل گرفتن 3 اخطار از گروه اخراج می شود 👺 🔹 .")
+		bot.sendMessage(target, "🚫 🔹 Dear user, [ @"+user+" ] \n you will be fired from the group for receiving (3) warnings 🔹 .")
 		bot.banGroupMember(target, guid)
 
 
@@ -82,7 +82,7 @@ while True:
 						elif msg.get("text") == "!stop" or msg.get("text") == "خاموش" and msg.get("author_object_guid") in admins :
 							try:
 								sleeped = True
-								bot.sendMessage(target, "✅  ربات خاموش شد سید, message_id=msg.get("message_id"))
+								bot.sendMessage(target, "✅  ᵀᴴᴱ ᴿᴼᴮᴼᵀ ᴵˢ ᴺᴼᵂ ᴼᶠᶠ", message_id=msg.get("message_id"))
 							except:
 								print("err off bot")
 								
@@ -91,7 +91,7 @@ while True:
 								sleeped = True
 								bot.sendMessage(target, "Restarting ...", message_id=msg.get("message_id"))
 								sleeped = False
-								bot.sendMessage(target, "ربات با موفقیت ریستارت شد دا", message_id=msg.get("message_id"))
+								bot.sendMessage(target, "ᵀᴴᴱ ᴿᴼᴮᴼᵀ ᵂᴬˢ ˢᵁᶜᶜᴱˢˢᶠᵁᴸᴸᵞ ᴿᴱˢᵀᴬᴿᵀᴱᴰ!", message_id=msg.get("message_id"))
 							except:
 								print("err Restart bot")
 								
@@ -101,29 +101,29 @@ while True:
 								answered.reverse()
 								bot.deleteMessages(target, answered[0:number])
 
-								bot.sendMessage(target, "✅ "+ str(number) +"پیام حذف شد دا", message_id=msg.get("message_id"))
+								bot.sendMessage(target, "✅ "+ str(number) +" ᴿᴱᶜᴱᴺᵀ ᴹᴱˢˢᴬᴳᴱ ˢᵁᶜᶜᴱˢˢᶠᵁᴸᴸᵞ ᴰᴱᴸᴱᵀᴱᴰ", message_id=msg.get("message_id"))
 								answered.reverse()
 
 							except IndexError:
 								bot.deleteMessages(target, [msg.get("reply_to_message_id")])
-								bot.sendMessage(target, "✅ پیام حذف شد دا", message_id=msg.get("message_id"))
+								bot.sendMessage(target, "✅ ᴹᴱˢˢᴬᴳᴱ ᴰᴱᴸᴱᵀᴱᴰ ˢᵁᶜᶜᴱˢˢᶠᵁᴸᴸᵞ", message_id=msg.get("message_id"))
 							except:
-								bot.sendMessage(target, "👺 دستور رو درست وارد کن جقی", message_id=msg.get("message_id"))
+								bot.sendMessage(target, "❌ ᴾᴸᴱᴬˢᴱ ᴱᴺᵀᴱᴿ ᵀᴴᴱ ᶜᴼᴹᴹᴬᴺᴰ ᶜᴼᴿᴿᴱᶜᵀᴸᵞ", message_id=msg.get("message_id"))
 
 						elif msg.get("text").startswith("بن") and msg.get("author_object_guid") in admins :
 							try:
 								guid = bot.getInfoByUsername(msg.get("text").split(" ")[1][1:])["data"]["chat"]["abs_object"]["object_guid"]
 								if not guid in admins :
 									bot.banGroupMember(target, guid)
-									# bot.sendMessage(target, "✅ این یهود با موفقیت از گروه حذف شد", message_id=msg.get("message_id"))
+									# bot.sendMessage(target, "✅ ᵀᴴᴱ ᵁˢᴱᴿ ᵂᴬˢ ˢᵁᶜᶜᴱˢˢᶠᵁᴸᴸᵞ ᴱˣᴾᴱᴸᴸᴱᴰ ᶠᴿᴼᴹ ᵀᴴᴱ ᴳᴿᴼᵁᴾ", message_id=msg.get("message_id"))
 								else :
-									bot.sendMessage(target, "👺 کصخل این ادمینه", message_id=msg.get("message_id"))
+									bot.sendMessage(target, "❌ ᵀᴴᴱ ᵁˢᴱᴿ ᴵˢ ᴬᴺ ᴬᴰᴹᴵᴺ", message_id=msg.get("message_id"))
 									
 							except IndexError:
 								bot.banGroupMember(target, bot.getMessagesInfo(target, [msg.get("reply_to_message_id")])[0]["author_object_guid"])
-								# bot.sendMessage(target, "✅ این یهود با موفقیت از گروه حذف شد", message_id=msg.get("message_id"))
+								# bot.sendMessage(target, "✅ ᵀᴴᴱ ᵁˢᴱᴿ ᵂᴬˢ ˢᵁᶜᶜᴱˢˢᶠᵁᴸᴸᵞ ᴱˣᴾᴱᴸᴸᴱᴰ ᶠᴿᴼᴹ ᵀᴴᴱ ᴳᴿᴼᵁᴾ", message_id=msg.get("message_id"))
 							except:
-								bot.sendMessage(target, "🤦‍♂️ دستور اشتباهه سید", message_id=msg.get("message_id"))
+								bot.sendMessage(target, "❌ ᵂᴿᴼᴺᴳ ᶜᴼᴹᴹᴬᴺᴰ", message_id=msg.get("message_id"))
 
 						elif msg.get("text").startswith("افزودن") or msg.get("text").startswith("!add") :
 							try:
@@ -137,13 +137,13 @@ while True:
 
 										bot.invite(target, [guid])
 									else:
-										bot.sendMessage(target, "این کسی که می خوای اد کنی در مخاطبین ربات ذخیره نیست سید 👺", message_id=msg.get("message_id"))
+										bot.sendMessage(target, "❌ ᵁˢᴱᴿ ᴵˢ ᴸᴵᴹᴵᵀᴱᴰ", message_id=msg.get("message_id"))
 								else:
 									bot.invite(target, [guid])
-									# bot.sendMessage(target, "✅ کاربر اکنون عضو گروه است ایول سید", message_id=msg.get("message_id"))
+									# bot.sendMessage(target, "✅ کاربر اکنون عضو گروه است", message_id=msg.get("message_id"))
 
 							except IndexError:
-								bot.sendMessage(target, "👺 سید کم بزن ناموصا . یه دستور ساده رو نمیتونی وارد کنی درست", message_id=msg.get("message_id"))
+								bot.sendMessage(target, "❌ لطفا دستور را به درستی وارد کنید", message_id=msg.get("message_id"))
 							
 							except:
 								bot.sendMessage(target, "❌ ᵁˢᴱᴿ ᴵˢ ᴸᴵᴹᴵᵀᴱᴰ", message_id=msg.get("message_id"))
@@ -161,15 +161,15 @@ while True:
 								bot.sendMessage(target, "ᴿᴬᴮᴬᵀ ᴿᵁᴸᴱˢ ᴴᴬⱽᴱ ᴮᴱᴱᴺ ᵁᴾᴰᴬᵀᴱᴰ!", message_id=msg.get("message_id"))
 								# rules.close()
 							except:
-								bot.sendMessage(target, "هعب سید یه مشکلی پیش اومده دوباره امتحان کن", message_id=msg.get("message_id"))
+								bot.sendMessage(target, "ᵀᴴᴱᴿᴱ ᵂᴬˢ ᴬ ᴾᴿᴼᴮᴸᴱᴹ, ᵀᴿᵞ ᴬᴳᴬᴵᴺ!", message_id=msg.get("message_id"))
 								
 						elif msg["text"].startswith("!number") or msg["text"].startswith("بشمار"):
 							try:
 								response = get(f"http://api.codebazan.ir/adad/?text={msg['text'].split()[1]}").json()
 								bot.sendMessage(msg["author_object_guid"], "\n".join(list(response["result"].values())[:20])).text
-								bot.sendMessage(target, "نتیجه بزودی برای شما ارسال خواهد شد سید...", message_id=msg["message_id"])
+								bot.sendMessage(target, "نتیجه بزودی برای شما ارسال خواهد شد...", message_id=msg["message_id"])
 							except:
-								bot.sendMessage(target, "متاسفانه نتیجه‌ای موجود نبود سید هعب!", message_id=msg["message_id"])
+								bot.sendMessage(target, "متاسفانه نتیجه‌ای موجود نبود!", message_id=msg["message_id"])
 							
 						elif msg.get("text").startswith("زمان"):
 							try:
@@ -184,7 +184,7 @@ while True:
 							except:
 								print("err time answer")
 						
-						elif msg.get("text") == "تاریخ":
+						elif msg.get("text") == "!date":
 							try:
 								bot.sendMessage(target, f"Date: {time.localtime().tm_year} / {time.localtime().tm_mon} / {time.localtime().tm_mday}", message_id=msg.get("message_id"))
 							except:
@@ -245,43 +245,43 @@ while True:
                                 
 						elif msg.get("text").startswith("اصل") or msg.get("text").startswith("اصل بده") or msg.get("text").startswith("اصل بشوت") or msg.get("text").startswith("اصل بد") or msg.get("text").startswith("اصل میدی") or msg.get("text").startswith("اصل میدی اشنا شیم"):
 							try:
-								bot.sendMessage(target,'گوربه غمگین هستم سید. رو من ازمایش کردن شدم ربات هعب . 2 سالمه ساکن خیابان های یزد' ,message_id=msg.get("message_id"))
+								bot.sendMessage(target,'ربات سجی هسم' ,message_id=msg.get("message_id"))
 							except:
 								print("err asll")
 
 						elif msg.get("text").startswith("خوبی") or msg.get("text").startswith("خبی"):
 							try:
-								bot.sendMessage(target, "چه بگم سید. تو خوبی ؟", message_id=msg.get("message_id"))
+								bot.sendMessage(target, "اره نپصم تو خوبی ؟", message_id=msg.get("message_id"))
 							except:
 								print("err khobi")
 								
 						elif msg.get("text").startswith("چه خبر") or msg.get("text").startswith("چخبر"):
 							try:
-								bot.sendMessage(target, "ســلامـتیت دا♥", message_id=msg.get("message_id"))
+								bot.sendMessage(target, "ســلامـتیت😍♥", message_id=msg.get("message_id"))
 							except:
 								print("err CheKhabar")
                                 
 						elif msg.get("text").startswith("بیا پی") or msg.get("text").startswith("بیا پیوی"):
 							try:
-								bot.sendMessage(target, "حله سید", message_id=msg.get("message_id"))
+								bot.sendMessage(target, "حله", message_id=msg.get("message_id"))
 							except:
 								print("err biya pv")
                                 
 						elif msg.get("text").startswith("اها") or msg.get("text").startswith("عاها"):
 							try:
-								bot.sendMessage(target, "طنز نشو دلقک زاده", message_id=msg.get("message_id"))
+								bot.sendMessage(target, "طنز نشو", message_id=msg.get("message_id"))
 							except:
 								print("err kossheryek")
                                 
 						elif msg.get("text").startswith("کونی") or msg.get("text").startswith("کیونی"):
 							try:
-								bot.sendMessage(target, "پدرته", message_id=msg.get("message_id"))
+								bot.sendMessage(target, "عمته😀", message_id=msg.get("message_id"))
 							except:
 								print("err kossherdo")
                                 
 						elif msg.get("text").startswith("کسکش") or msg.get("text").startswith("کصکش"):
 							try:
-								bot.sendMessage(target, "بشین سرش کیسه بکش👺", message_id=msg.get("message_id"))
+								bot.sendMessage(target, "بشین سرش کیسه بکش🙂", message_id=msg.get("message_id"))
 							except:
 								print("err kossherse")
                                 
@@ -293,25 +293,25 @@ while True:
                                 
 						elif msg.get("text").startswith("خبید") or msg.get("text").startswith("خبی"):
 							try:
-								bot.sendMessage(target, "اره داگ", message_id=msg.get("message_id"))
+								bot.sendMessage(target, "حله", message_id=msg.get("message_id"))
 							except:
 								print("err kossherpang")
                                 
 						elif msg.get("text").startswith("مرسی") or msg.get("text").startswith("مرس"):
 							try:
-								bot.sendMessage(target, "مرسی از خایمالیت", message_id=msg.get("message_id"))
+								bot.sendMessage(target, "خواهش میکنم", message_id=msg.get("message_id"))
 							except:
 								print("err kosshershish")
                                 
 						elif msg.get("text").startswith("ممنون") or msg.get("text").startswith("خیلی ممنون"):
 							try:
-								bot.sendMessage(target, "مرسی از خایمالیت", message_id=msg.get("message_id"))
+								bot.sendMessage(target, "Thankyou very much 😇", message_id=msg.get("message_id"))
 							except:
 								print("err kossherhaf")
                                 
 						elif msg.get("text").startswith("مرسی ممنون") or msg.get("text").startswith("ملسی"):
 							try:
-								bot.sendMessage(target, "مرسی از خایمالیت", message_id=msg.get("message_id"))
+								bot.sendMessage(target, "جواب دادنت وظیفه بود😆", message_id=msg.get("message_id"))
 							except:
 								print("err kossherhash")
                                 
