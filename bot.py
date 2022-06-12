@@ -753,9 +753,9 @@ while True:
 							except:
 								print("err nado")
                                 
-						elif msg.get("text").startswith("سجود") or msg.get("text").startswith("سجاد"):
+						elif msg.get("text").startswith("ALIREZA") or msg.get("text").startswith("ممر"):
 							try:
-								bot.sendMessage(target, "سگاده مث سگ میگادت", message_id=msg.get("message_id"))
+								bot.sendMessage(target, "داشمه :)", message_id=msg.get("message_id"))
 							except:
 								print("err nase")
                                 
@@ -767,13 +767,13 @@ while True:
                                 
 						elif msg.get("text").startswith("نه") or msg.get("text").startswith("ن"):
 							try:
-								bot.sendMessage(target, "چرا چیشده؟", message_id=msg.get("message_id"))
+								bot.sendMessage(target, "چرا سید؟", message_id=msg.get("message_id"))
 							except:
 								print("err napn")
                                 
 						elif msg.get("text").startswith("هعی") or msg.get("text").startswith("هعپ"):
 							try:
-								bot.sendMessage(target, "درست میشه هر مشکلی هست نگران نباش😌❣", message_id=msg.get("message_id"))
+								bot.sendMessage(target, "درست میشه هر مشکلی هست نگران نباش سید 😼🖐", message_id=msg.get("message_id"))
 							except:
 								print("err nash")
                                 
@@ -791,7 +791,7 @@ while True:
                                 
 						elif msg.get("text").startswith("عاشقتم") or msg.get("text").startswith("عاشقتم"):
 							try:
-								bot.sendMessage(target, "منم همینطور", message_id=msg.get("message_id"))
+								bot.sendMessage(target, "مرتیکه گیخار گی 😾", message_id=msg.get("message_id"))
 							except:
 								print("err nano")
                                 
@@ -803,19 +803,19 @@ while True:
                                 
 						elif msg.get("text").startswith("گوه نخور") or msg.get("text").startswith("گو نخور"):
 							try:
-								bot.sendMessage(target, "تو بخور😃😂", message_id=msg.get("message_id"))
+								bot.sendMessage(target, "من تو رو نمیخورم 😼", message_id=msg.get("message_id"))
 							except:
 								print("err sadyek")
                                 
 						elif msg.get("text").startswith("بات") or msg.get("text").startswith("بات"):
 							try:
-								bot.sendMessage(target, "هوف چیه", message_id=msg.get("message_id"))
+								bot.sendMessage(target, "گاییدی", message_id=msg.get("message_id"))
 							except:
 								print("err saddo")
                                 
 						elif msg.get("text").startswith("ریدم") or msg.get("text").startswith("ریدم"):
 							try:
-								bot.sendMessage(target, "دقیقا منم ریدم😐خیلی تنذه", message_id=msg.get("message_id"))
+								bot.sendMessage(target, "دقیقا منم ریدم \n خیلی تنذه 😼", message_id=msg.get("message_id"))
 							except:
 								print("err sadse")
                                 
@@ -827,31 +827,31 @@ while True:
 								
 						elif msg.get("text").startswith("😂") or msg.get("text").startswith("🤣"):
 							try:
-								bot.sendMessage(target, "توش رفت ؟", message_id=msg.get("message_id"))
+								bot.sendMessage(target, "خنده مکنی کونکش؟ 😾", message_id=msg.get("message_id"))
 							except:
 								print("err luagh")
                                 
 						elif msg.get("text").startswith("🤣🤣") or msg.get("text").startswith("🤣"):
 							try:
-								bot.sendMessage(target, "فک کردم بره توت درد داره😐نگو ک کیف داره", message_id=msg.get("message_id"))
+								bot.sendMessage(target, "خنده مکنی کونکش؟ 😾", message_id=msg.get("message_id"))
 							except:
 								print("err khikhi")
 								
 						elif msg.get("text") == "😐":
 							try:
-								bot.sendMessage(target, "درد بگیری بچه اینقدر اینو نده 😏💔", message_id=msg.get("message_id"))
+								bot.sendMessage(target, "چته سید", message_id=msg.get("message_id"))
 							except:
 								print("err poker answer")
 
 						elif msg.get("text") == "دیوث":
 							try:
-								bot.sendMessage(target, "کم گوه بخور خودتی🙂💔", message_id=msg.get("message_id"))
+								bot.sendMessage(target, "پدرتو میگی دیگه؟ 😹", message_id=msg.get("message_id"))
 							except:
 								print("err dayuos")
 
 						elif msg.get("text") == "تست":
 							try:
-								bot.sendMessage(target, "ᵀᴴᴱ ᴿᴼᴮᴼᵀ ᴵˢ ᴺᴼᵂ ᴬᶜᵀᴵⱽᴱ ✅", message_id=msg.get("message_id"))
+								bot.sendMessage(target, "در حال حاضر ربات فعال است و مشکلی ندارد سید ✅ \n ❗ درصورتی که ربات باگ خورده به ایدی زیر پیام دهید \n @AIi_Gamer :)", message_id=msg.get("message_id"))
 							except:
 								print("err test bot")
 								
