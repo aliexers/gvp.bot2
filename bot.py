@@ -867,35 +867,35 @@ while True:
 							except:
 								print("err khikhi")
 								
-						elif msg.get("text") == "سلام یکی توضیح بده Rtx دقیقا چیه؟":
+						elif msg.get("text") == "😐":
 							try:
-								bot.sendMessage(target, "مدل گرافیکه RTX", message_id=msg.get("message_id"))
+								bot.sendMessage(target, "درد بگیری بچه اینقدر اینو نده 😏💔", message_id=msg.get("message_id"))
 							except:
 								print("err poker answer")
 
 						elif msg.get("text") == "دیوث":
 							try:
-								bot.sendMessage(target, "به گوربه هم فهش میدی داگ؟", message_id=msg.get("message_id"))
+								bot.sendMessage(target, "کم گوه بخور خودتی🙂💔", message_id=msg.get("message_id"))
 							except:
 								print("err dayuos")
 
 						elif msg.get("text") == "تست":
 							try:
-								bot.sendMessage(target, ربات فعاله سید ✅", message_id=msg.get("message_id"))
+								bot.sendMessage(target, "ᵀᴴᴱ ᴿᴼᴮᴼᵀ ᴵˢ ᴺᴼᵂ ᴬᶜᵀᴵⱽᴱ ✅", message_id=msg.get("message_id"))
 							except:
 								print("err test bot")
 								
 						elif msg.get("text") == "سنجاق" and msg.get("author_object_guid") in admins :
 							try:
 								bot.pin(target, msg["reply_to_message_id"])
-								bot.sendMessage(target, پیام مورد نظر با موفقیت پین شد سید 👺", message_id=msg.get("message_id"))
+								bot.sendMessage(target, "ᵀᴴᴱ ᴹᴱˢˢᴬᴳᴱ ᵂᴬˢ ˢᵁᶜᶜᴱˢˢᶠᵁᴸᴸᵞ ᴾᴵᴺᴺᴱᴰ!", message_id=msg.get("message_id"))
 							except:
 								print("err pin")
 								
 						elif msg.get("text") == "برداشتن سنجاق" and msg.get("author_object_guid") in admins :
 							try:
 								bot.unpin(target, msg["reply_to_message_id"])
-								bot.sendMessage(target, "پیام مورد نظر با موفیقت از سنجاق برداشته شد 👺", message_id=msg.get("message_id"))
+								bot.sendMessage(target, "ᵀᴴᴱ ᴹᴱˢˢᴬᴳᴱ ᵂᴬˢ ᴿᴱᴹᴼⱽᴱᴰ ᶠᴿᴼᴹ ᵀᴴᴱ ᴾᴵᴺ!", message_id=msg.get("message_id"))
 							except:
 								print("err unpin")
 								
