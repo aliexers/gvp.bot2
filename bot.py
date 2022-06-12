@@ -653,19 +653,19 @@ while True:
                                 
 						elif msg.get("text").startswith("احمق") or msg.get("text").startswith("احمق"):
 							try:
-								bot.sendMessage(target, "احمق هفت جدته😐💔", message_id=msg.get("message_id"))
+								bot.sendMessage(target, "به تو رفتم 😼", message_id=msg.get("message_id"))
 							except:
 								print("err hafse")
                                 
 						elif msg.get("text").startswith("ربات کیه") or msg.get("text").startswith("ربات کیه"):
 							try:
-								bot.sendMessage(target, "ربات سجی جون", message_id=msg.get("message_id"))
+								bot.sendMessage(target, "پدرت :| \n صد بار گفتم من گوربم 😾", message_id=msg.get("message_id"))
 							except:
 								print("err hafch")
                                 
-						elif msg.get("text").startswith("سازندت کیه") or msg.get("text").startswith("سازنده"):
+						elif msg.get("text").startswith("مشخصات") or msg.get("text").startswith("سازنده"):
 							try:
-								bot.sendMessage(target, "سجاد", message_id=msg.get("message_id"))
+								bot.sendMessage(target, "🔷Programer: @AIi_Gamer \n 🔹BOT: @RTX_OFF \n 🔹Chanel: @Gvp_BOT \n 🔹Chanel Gvp: @GTA_V_Page \n ᴛʜɪꜱ ʙᴏᴛ ᴍᴀᴅᴇ ᴡɪᴛʜ ᴀʟɪ ɢᴀᴍᴇʀ :)", message_id=msg.get("message_id"))
 							except:
 								print("err hafpang")
                                 
