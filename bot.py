@@ -299,19 +299,19 @@ while True:
                                 
 						elif msg.get("text").startswith("مرسی") or msg.get("text").startswith("مرس"):
 							try:
-								bot.sendMessage(target, "مرسی از خایمالیت 🤝", message_id=msg.get("message_id"))
+								bot.sendMessage(target, "مرسی از خایمالیت  🤝", message_id=msg.get("message_id"))
 							except:
 								print("err kosshershish")
                                 
 						elif msg.get("text").startswith("ممنون") or msg.get("text").startswith("خیلی ممنون"):
 							try:
-								bot.sendMessage(target, "مرسی از خایمالیت 🤝", message_id=msg.get("message_id"))
+								bot.sendMessage(target, "مرسی از خایمالیت سید 🤝", message_id=msg.get("message_id"))
 							except:
 								print("err kossherhaf")
                                 
 						elif msg.get("text").startswith("مرسی ممنون") or msg.get("text").startswith("ملسی"):
 							try:
-								bot.sendMessage(target, "مرسی از خایمالیت 🤝", message_id=msg.get("message_id"))
+								bot.sendMessage(target, "ممنون از خایمالیت 🤝", message_id=msg.get("message_id"))
 							except:
 								print("err kossherhash")
                                 
@@ -431,19 +431,19 @@ while True:
                                 
 						elif msg.get("text").startswith("کون") or msg.get("text").startswith("کیون"):
 							try:
-								bot.sendMessage(target, "یکی دارم مث ساعت شنی جهت تست پیوی باش🥲💋", message_id=msg.get("message_id"))
+								bot.sendMessage(target, "کون ممرضا رو میگی؟", message_id=msg.get("message_id"))
 							except:
 								print("err bishash")
                                 
 						elif msg.get("text").startswith("کص ننت") or msg.get("text").startswith("کس ننت"):
 							try:
-								bot.sendMessage(target, "بیشعور", message_id=msg.get("message_id"))
+								bot.sendMessage(target, "ناراحت شدم دا قرار نبود ناموصی بدی . ما اگه اینجا فحش هم میدیم جنبه شوخی داره و ناموصی نمی دیم
 							except:
 								print("err bisnoh")
                                 
 						elif msg.get("text").startswith("عکس بده") or msg.get("text").startswith("عکس"):
 							try:
-								bot.sendMessage(target, "بشین تا بدم🤭", message_id=msg.get("message_id"))
+								bot.sendMessage(target, "بشین تا بدم", message_id=msg.get("message_id"))
 							except:
 								print("err si")
                                 
