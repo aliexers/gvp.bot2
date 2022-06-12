@@ -807,9 +807,9 @@ while True:
 							except:
 								print("err sadyek")
                                 
-						elif msg.get("text").startswith("بات") or msg.get("text").startswith("بات"):
+						elif msg.get("text").startswith("کانال") or msg.get("text").startswith("چنل"):
 							try:
-								bot.sendMessage(target, "گاییدی", message_id=msg.get("message_id"))
+								bot.sendMessage(target, "بفرما :) \n https://rubika.ir/joing/BAIDDGGD0SALTSPQMRWMVBOLHBQZLXGH", message_id=msg.get("message_id"))
 							except:
 								print("err saddo")
                                 
@@ -1019,7 +1019,7 @@ while True:
 								print("err unlock GP")
 
 					else:
-						if msg.get("text") == "!start" or msg.get("text") == "روشن" and msg.get("author_object_guid") in admins :
+						if msg.get("text") == "شروع" or msg.get("text") == "روشن" and msg.get("author_object_guid") in admins :
 							try:
 								sleeped = False
 								bot.sendMessage(target, "The robot was successfully lit!", message_id=msg.get("message_id"))
@@ -1037,14 +1037,6 @@ while True:
 						except:
 							print("err rm member answer")
 					
-					elif data["type"]=="AddedGroupMembers":
-						try:
-							user = bot.getUserInfo(data['peer_objects'][0]['object_guid'])["data"]["user"]["first_name"]
-							bot.sendMessage(target, f"Hi {user} Dear 😘🌹\n • Welcome to the {name} group 😍❤️\nPlease follow the rules.\n 💎 Send the word (rules) to see enough rules!\nManufacturer: @Sajad_Venus", message_id=msg["message_id"])
-							# bot.deleteMessages(target, [msg["message_id"]])
-						except:
-							print("err add member answer")
-					
 					elif data["type"]=="LeaveGroup":
 						try:
 							user = bot.getUserInfo(data['performer_object']['object_guid'])["data"]["user"]["first_name"]
@@ -1052,14 +1044,6 @@ while True:
 							# bot.deleteMessages(target, [msg["message_id"]])
 						except:
 							print("err Leave member Answer")
-							
-					elif data["type"]=="JoinedGroupByLink":
-						try:
-							user = bot.getUserInfo(data['performer_object']['object_guid'])["data"]["user"]["first_name"]
-							bot.sendMessage(target, f"Hi {user} Dear 😘🌹\n • Welcome to the {name} group 😍❤️\nPlease follow the rules.\n 💎 Send the word (rules) to see enough rules!\nManufacturer: @Sajad_Venus", message_id=msg["message_id"])
-							# bot.deleteMessages(target, [msg["message_id"]])
-						except:
-							print("err Joined member Answer")
 							
 				else:
 					if "forwarded_from" in msg.keys() and bot.getMessagesInfo(target, [msg.get("message_id")])[0]["forwarded_from"]["type_from"] == "Channel" and not msg.get("author_object_guid") in admins :
