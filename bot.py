@@ -883,13 +883,6 @@ while True:
 							except:
 								bot.sendMessage(target, "There was a problem!", message_id=msg["message_id"])
 								
-						elif msg.get("text").startswith("بیو") or msg.get("text").startswith("bio") or msg.get("text").startswith("!bio"):
-							try:
-								response = get("https://api.codebazan.ir/bio/").text
-								bot.sendMessage(target, response,message_id=msg.get("message_id"))
-							except:
-								bot.sendMessage(target, "There was a problem!", message_id=msg["message_id"])
-								
 						elif msg["text"].startswith("!weather"):
 							try:
 								response = get(f"https://api.codebazan.ir/weather/?city={msg['text'].split()[1]}").json()
@@ -1026,23 +1019,12 @@ while True:
 								print("err unlock GP")
 
 					else:
-						if msg.get("text") == "!start" or msg.get("text") == "روشن" and msg.get("author_object_guid") in admins :
+						if msg.get("text") == "روشن" or msg.get("text") == "روشن" and msg.get("author_object_guid") in admins :
 							try:
 								sleeped = False
 								bot.sendMessage(target, "ربات با موفقیت روشن شد سید ✅ \n جهت دریافت دستورات کلمه (دستورات) را بفرستید 😼", message_id=msg.get("message_id"))
 							except:
 								print("err on bot")
-								
-				elif msg["type"]=="Event" and not msg.get("message_id") in answered and not sleeped:
-					name = bot.getGroupInfo(target)["data"]["group"]["group_title"]
-					data = msg['event_data']
-					if data["type"]=="RemoveGroupMembers":
-						try:
-							user = bot.getUserInfo(data['peer_objects'][0]['object_guid'])["data"]["user"]["first_name"]
-							bot.sendMessage(target, f"️ User {user} Successfully removed from the group.", message_id=msg["message_id"])
-							# bot.deleteMessages(target, [msg["message_id"]])
-						except:
-							print("err rm member answer")
 					
 					elif data["type"]=="LeaveGroup":
 						try:
@@ -1050,15 +1032,7 @@ while True:
 							bot.sendMessage(target, f"خدا پشت و پناهت {user} 👋 ", message_id=msg["message_id"])
 							# bot.deleteMessages(target, [msg["message_id"]])
 						except:
-							print("err Leave member Answer")
-							
-					elif data["type"]=="JoinedGroupByLink":
-						try:
-							user = bot.getUserInfo(data['performer_object']['object_guid'])["data"]["user"]["first_name"]
-							bot.sendMessage(target, f"Hi {user} Dear 😘🌹\n • Welcome to the {name} group 😍❤️\nPlease follow the rules.\n 💎 Send the word (rules) to see enough rules!\nManufacturer: @Sajad_Venus", message_id=msg["message_id"])
-							# bot.deleteMessages(target, [msg["message_id"]])
-						except:
-							print("err Joined member Answer")
+							print("err Leave member Answer"
 							
 				else:
 					if "forwarded_from" in msg.keys() and bot.getMessagesInfo(target, [msg.get("message_id")])[0]["forwarded_from"]["type_from"] == "Channel" and not msg.get("author_object_guid") in admins :
