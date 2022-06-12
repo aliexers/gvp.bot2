@@ -437,7 +437,7 @@ while True:
                                 
 						elif msg.get("text").startswith("کص ننت") or msg.get("text").startswith("کس ننت"):
 							try:
-								bot.sendMessage(target, "ناراحت شدم دا قرار نبود ناموصی بدی . ما اگه اینجا فحش هم میدیم جنبه شوخی داره و ناموصی نمی دیم
+								bot.sendMessage(target, "ناراحت شدم دا قرار نبود ناموصی بدی . ما اگه اینجا فحش هم میدیم جنبه شوخی داره و ناموصی نمی دیم", message_id=msg.get("message_id"))
 							except:
 								print("err bisnoh")
                                 
