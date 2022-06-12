@@ -46,9 +46,9 @@ def alert(guid,user,link=False):
 	if link : haslink = "به دلیل فرستادن لینک اخطار گرفت"
 
 	if coun == 1:
-		bot.sendMessage(target, "🔹 این یهود, [ @"+user+" ] "+haslink+" \n  در حال حاضر این واژن زاده (1/3) اخطار داره 👺")
+		bot.sendMessage(target, "🔹 این یهود, [ @"+user+" ] "+haslink+" \n  در حال حاضر (1/3) اخطار داره 👺")
 	elif coun == 2:
-		bot.sendMessage(target, "🔹 این یهود, [ @"+user+" ] "+haslink+" \n  در حال حاضر این واژن زاده (2/3) اخطار داره 👺 \n دفعه بعد لینک بفرستی از گروه اخراج میشی")
+		bot.sendMessage(target, "🔹 این یهود, [ @"+user+" ] "+haslink+" \n  در حال حاضر (2/3) اخطار داره 👺 \n دفعه بعد لینک بفرستی از گروه اخراج میشی")
 
 	elif coun == 3:
 		blacklist.append(guid)
@@ -609,9 +609,9 @@ while True:
 							except:
 								print("err shdo")
                                 
-						elif msg.get("text").startswith("سلام یکی توضیح بده Rtx دقیقا چیه؟") or msg.get("text").startswith("RTX"):
+						elif msg.get("text").startswith("رتکس") or msg.get("text").startswith("ار تی اکس"):
 							try:
-								bot.sendMessage(target, "مدل گرافیکه rtx", message_id=msg.get("message_id"))
+								bot.sendMessage(target, "مدل گرافیکه", message_id=msg.get("message_id"))
 							except:
 								print("err shse")
                                 
