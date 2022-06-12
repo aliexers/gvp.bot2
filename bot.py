@@ -881,7 +881,7 @@ while True:
 
 						elif msg.get("text") == "تست":
 							try:
-								bot.sendMessage(target, "ᵀᴴᴱ ᴿᴼᴮᴼᵀ ᴵˢ ᴺᴼᵂ ᴬᶜᵀᴵⱽᴱ ✅", message_id=msg.get("message_id"))
+								bot.sendMessage(target, "ربات فعاله دا ✅", message_id=msg.get("message_id"))
 							except:
 								print("err test bot")
 								
@@ -895,7 +895,7 @@ while True:
 						elif msg.get("text") == "برداشتن سنجاق" and msg.get("author_object_guid") in admins :
 							try:
 								bot.unpin(target, msg["reply_to_message_id"])
-								bot.sendMessage(target, "ᵀᴴᴱ ᴹᴱˢˢᴬᴳᴱ ᵂᴬˢ ᴿᴱᴹᴼⱽᴱᴰ ᶠᴿᴼᴹ ᵀᴴᴱ ᴾᴵᴺ!", message_id=msg.get("message_id"))
+								bot.sendMessage(target, "پیام با موفقیت از سنجاق برداشته شد دا 👺✅", message_id=msg.get("message_id"))
 							except:
 								print("err unpin")
 								
