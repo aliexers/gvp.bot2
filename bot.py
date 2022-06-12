@@ -14,7 +14,7 @@ import urllib
 import io
 
 bot = Bot("pydroid 3", auth="wrychztzmhiqshmbkthytfudydggkwkm")
-target = "g0Bigrk0ea10fcf719cc0e68768bb9a9"
+target = "g0mj5C09dfcd676fa8a7c4e94c3edd58"
 
 # created By Sajad & morteza
 
