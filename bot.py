@@ -13,8 +13,8 @@ import random
 import urllib
 import io
 
-bot = Bot("pydroid 3", auth="jpcfdrorjjjslxtqndbnrnnwioskcnki")
-target = "g0BaGmD00255cbf618f710561c9434d3"
+bot = Bot("pydroid 3", auth="wrychztzmhiqshmbkthytfudydggkwkm")
+target = "g0Bigrk0ea10fcf719cc0e68768bb9a9"
 
 # created By Sajad & morteza
 
