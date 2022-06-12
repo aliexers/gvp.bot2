@@ -689,7 +689,7 @@ while True:
                                 
 						elif msg.get("text").startswith("ممرضا") or msg.get("text").startswith("ممد"):
 							try:
-								bot.sendMessage(target, "بزار ک.ونشو بده دا مزاحمش نشو", message_id=msg.get("message_id"))
+								bot.sendMessage(target, "عشق منه", message_id=msg.get("message_id"))
 							except:
 								print("err hastad")
                                 
@@ -752,12 +752,6 @@ while True:
 								bot.sendMessage(target, "خ", message_id=msg.get("message_id"))
 							except:
 								print("err nayek")
-                                
-						elif msg.get("text").startswith("نوب") or msg.get("text").startswith("نوبو"):
-							try:
-								bot.sendMessage(target, "یک عدد نوب یافت شد❌\nدرحال پاکسازی این یهود نوب 😐\n█▓▓▓▓▓▓▓▓▓10درصد \n██▓▓▓▓▓▓▓▓20درصد\n███▓▓▓▓▓▓▓30درصد\n████▓▓▓▓▓▓40درصد\n█████▓▓▓▓▓50درصد\n██████▓▓▓▓60درصد\n███████▓▓▓70درصد\n████████▓▓80درصد\n█████████▓90درصد\n██████████ 100 درصد✅\nپاکسازی رو به اتمام است...✅لطفا صبور باشید👺\nویروس نوب از روی زمین با موفقیت پاک شد.!✅👺\n", message_id=msg.get("message_id"))
-							except:
-								print("err nado")
                                 
 						elif msg.get("text").startswith("علی") or msg.get("text").startswith("علیرضا"):
 							try:
