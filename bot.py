@@ -52,7 +52,7 @@ def alert(guid,user,link=False):
 
 	elif coun == 3:
 		blacklist.append(guid)
-		bot.sendMessage(target, "🚫 🔹 این ملعون, [ @"+user+" ] \n به دلیل گرفتن 3 اخطار از گروه اخراج می شود 👺")
+		bot.sendMessage(target, "🚫 🔹 این ملعون, [ @"+user+" ] \n به دلیل گرفتن 3 اخطار از گروه اخراج شد 👺")
 		bot.banGroupMember(target, guid)
 
 
@@ -82,7 +82,7 @@ while True:
 						elif msg.get("text") == "!stop" or msg.get("text") == "خاموش" and msg.get("author_object_guid") in admins :
 							try:
 								sleeped = True
-								bot.sendMessage(target, "✅  ᵀᴴᴱ ᴿᴼᴮᴼᵀ ᴵˢ ᴺᴼᵂ ᴼᶠᶠ", message_id=msg.get("message_id"))
+								bot.sendMessage(target, "🗿 ربات خاموش شد دا", message_id=msg.get("message_id"))
 							except:
 								print("err off bot")
 								
@@ -91,7 +91,7 @@ while True:
 								sleeped = True
 								bot.sendMessage(target, "Restarting ...", message_id=msg.get("message_id"))
 								sleeped = False
-								bot.sendMessage(target, "ᵀᴴᴱ ᴿᴼᴮᴼᵀ ᵂᴬˢ ˢᵁᶜᶜᴱˢˢᶠᵁᴸᴸᵞ ᴿᴱˢᵀᴬᴿᵀᴱᴰ!", message_id=msg.get("message_id"))
+								bot.sendMessage(target, "🗿 ربات با موفقیت ریستارت شد دا", message_id=msg.get("message_id"))
 							except:
 								print("err Restart bot")
 								
