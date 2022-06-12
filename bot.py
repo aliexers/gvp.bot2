@@ -485,7 +485,7 @@ while True:
                                 
 						elif msg.get("text").startswith("گودرت") or msg.get("text").startswith("گدرت"):
 							try:
-								bot.sendMessage(target, "نداری", message_id=msg.get("message_id"))
+								bot.sendMessage(target, "ندری", message_id=msg.get("message_id"))
 							except:
 								print("err sihaf")
                                 
@@ -867,7 +867,7 @@ while True:
 							except:
 								print("err khikhi")
 								
-						elif msg.get("text") == "😐":
+						elif msg.get("text") == "🤢":
 							try:
 								bot.sendMessage(target, "درد بگیری بچه اینقدر اینو نده 😏💔", message_id=msg.get("message_id"))
 							except:
@@ -875,7 +875,7 @@ while True:
 
 						elif msg.get("text") == "دیوث":
 							try:
-								bot.sendMessage(target, "کم گوه بخور خودتی🙂💔", message_id=msg.get("message_id"))
+								bot.sendMessage(target, ":/", message_id=msg.get("message_id"))
 							except:
 								print("err dayuos")
 
