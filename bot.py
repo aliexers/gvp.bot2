@@ -297,23 +297,11 @@ while True:
 							except:
 								print("err kossherpang")
                                 
-						elif msg.get("text").startswith("مرسی") or msg.get("text").startswith("مرس"):
+						elif msg.get("text").startswith("مرسی") or msg.get("text").startswith("ممنون"):
 							try:
-								bot.sendMessage(target, "مرسی از خایمالیت  🤝", message_id=msg.get("message_id"))
+								bot.sendMessage(target, "م.رسی از خایمالیت  🤝", message_id=msg.get("message_id"))
 							except:
 								print("err kosshershish")
-                                
-						elif msg.get("text").startswith("ممنون") or msg.get("text").startswith("خیلی ممنون"):
-							try:
-								bot.sendMessage(target, "مرسی از خایمالیت سید 🤝", message_id=msg.get("message_id"))
-							except:
-								print("err kossherhaf")
-                                
-						elif msg.get("text").startswith("مرسی ممنون") or msg.get("text").startswith("ملسی"):
-							try:
-								bot.sendMessage(target, "ممنون از خایمالیت 🤝", message_id=msg.get("message_id"))
-							except:
-								print("err kossherhash")
                                 
 						elif msg.get("text").startswith("جقی") or msg.get("text").startswith("جغی"):
 							try:
