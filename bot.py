@@ -46,13 +46,13 @@ def alert(guid,user,link=False):
 	if link : haslink = "به دلیل فرستادن لینک اخطار گرفت"
 
 	if coun == 1:
-		bot.sendMessage(target, "🔹 این یهود, [ @"+user+" ] "+haslink+" \n  در حال حاضر این واژن زاده (1/3) اخطار داره 👺 🔹 .")
+		bot.sendMessage(target, "🔹 این یهود, [ @"+user+" ] "+haslink+" \n  در حال حاضر این واژن زاده (1/3) اخطار داره 👺")
 	elif coun == 2:
-		bot.sendMessage(target, "🔹 این یهود, [ @"+user+" ] "+haslink+" \n  در حال حاضر این واژن زاده (1/3) اخطار داره 👺 🔹 .")
+		bot.sendMessage(target, "🔹 این یهود, [ @"+user+" ] "+haslink+" \n  در حال حاضر این واژن زاده (1/3) اخطار داره 👺")
 
 	elif coun == 3:
 		blacklist.append(guid)
-		bot.sendMessage(target, "🚫 🔹 Dear user, [ @"+user+" ] \n you will be fired from the group for receiving (3) warnings 🔹 .")
+		bot.sendMessage(target, "🚫 🔹 این ملعون, [ @"+user+" ] \n به دلیل گرفتن 3 اخطار از گروه اخراج می شود 👺")
 		bot.banGroupMember(target, guid)
 
 
