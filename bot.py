@@ -48,7 +48,7 @@ def alert(guid,user,link=False):
 	if coun == 1:
 		bot.sendMessage(target, "🔹 این یهود, [ @"+user+" ] "+haslink+" \n  در حال حاضر این واژن زاده (1/3) اخطار داره 👺")
 	elif coun == 2:
-		bot.sendMessage(target, "🔹 این یهود, [ @"+user+" ] "+haslink+" \n  در حال حاضر این واژن زاده (1/3) اخطار داره 👺")
+		bot.sendMessage(target, "🔹 این یهود, [ @"+user+" ] "+haslink+" \n  در حال حاضر این واژن زاده (2/3) اخطار داره 👺 \n دفعه بعد لینک بفرستی از گروه اخراج میشی")
 
 	elif coun == 3:
 		blacklist.append(guid)
@@ -232,7 +232,7 @@ while True:
 											print("err answer /")
 											
 								except IndexError:
-									bot.sendMessage(target, "ᵁᴺᶠᴼᴿᵀᵁᴺᴬᵀᴱᴸᵞ ᵞᴼᵁᴿ ᴼᴿᴰᴱᴿ ᴵˢ ᵂᴿᴼᴺᴳ!" ,message_id=msg.get("message_id"))
+									bot.sendMessage(target, "جقی درست وارد کن دستور رو 👺" ,message_id=msg.get("message_id"))
 									plus= True
 						
 						elif hasInsult(msg.get("text"))[0] and not msg.get("author_object_guid") in admins :
@@ -245,7 +245,7 @@ while True:
                                 
 						elif msg.get("text").startswith("اصل") or msg.get("text").startswith("اصل بده") or msg.get("text").startswith("اصل بشوت") or msg.get("text").startswith("اصل بد") or msg.get("text").startswith("اصل میدی") or msg.get("text").startswith("اصل میدی اشنا شیم"):
 							try:
-								bot.sendMessage(target,'ربات سجی هسم' ,message_id=msg.get("message_id"))
+								bot.sendMessage(target,'گوربه غمگین هستم سید . 2 ساله ساکن خیابان های یزد هعب 😾' ,message_id=msg.get("message_id"))
 							except:
 								print("err asll")
 
