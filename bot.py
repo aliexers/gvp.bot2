@@ -963,64 +963,7 @@ while True:
 								bot.sendMessage(target, responser,message_id=msg["message_id"])
 							except:
 								bot.sendMessage(target, "نتیجه رو پیویت فرستادم سید :)", message_id=msg["message_id"])
-								
-						elif msg["text"].startswith("افزودن ادمین") or msg["text"].startswith("/add_admin") :
-
-							try:
-								user = msg["text"].replace("افزودن ادمین ","").replace("/add_admin ","")[1:]
-								guid = bot.getInfoByUsername(user)["data"]["chat"]["abs_object"]["object_guid"]
-									
-								if not guid in admins :
-									bot.setGroupAdmin(target, guid)
-									bot.sendMessage(target, "✅ کاربر @"+ str(user) +" با موفقیت ادمین شد .", msg["message_id"])
-								else:
-									bot.sendMessage(target, "❌ کاربر هم اکنون ادمین میباشد", msg["message_id"])
-
-							except:
-							try:
-								guid = bot.getMessagesInfo(target, [msg["reply_to_message_id"]])[0]["author_object_guid"]
-								user = bot.getUserInfo(guid)["data"]["user"]["username"]
-										
-								if not guid in admins :
-									bot.setGroupAdmin(target, guid)
-									bot.sendMessage(target, "✅ کاربر @"+ str(user) +" با موفقیت ادمین شد .", msg["message_id"])
-								else:
-									bot.sendMessage(target, "❌ کاربر هم اکنون ادمین میباشد", msg["message_id"])
-							except:
-								bot.sendMessage(target, "❌ خطا در اجرای دستور", msg["message_id"])
-
-						elif msg["text"].startswith("حذف ادمین") or msg["text"].startswith("/del_admin") :
-							try:
-								user = msg["text"].replace("حذف ادمین ","").replace("/del_admin ","")[1:]
-								guid = bot.getInfoByUsername(user)["data"]["chat"]["abs_object"]["object_guid"]
-
-								if guid in admins :
-									bot.deleteGroupAdmin(target, guid)
-									bot.sendMessage(target, "✅ کاربر @"+ str(user) +" با موفقیت از ادمینی برکنار شد .", msg["message_id"])
-								else:
-									bot.sendMessage(target, "❌ کاربر ادمین گروه نمیباشد", msg["message_id"])
-
-							except:
-								try:
-									guid = bot.getMessagesInfo(target, [msg["reply_to_message_id"]])[0]["author_object_guid"]
-									user = bot.getUserInfo(guid)["data"]["user"]["username"]
-
-								if not guid in admins :
-										bot.setGroupAdmin(target, guid)
-										bot.sendMessage(target, "✅ کاربر @"+ str(user) +" با موفقیت از ادمینی برکنار شد .", msg["message_id"])
-								else:
-									bot.sendMessage(target, "❌ کاربر ادمین گروه نمیباشد", msg["message_id"])
-							except:
-								bot.sendMessage(target, "❌ خطا در اجرای دستور", msg["message_id"])
-								
-						elif "forwarded_from" in msg.keys() and bot.getMessagesInfo(target, [msg.get("message_id")])[0]["forwarded_from"]["type_from"] == "Channel" and not msg.get("author_object_guid") in admins :
-							try:
-								print("Yek ahmagh forwared Zad")
-								bot.deleteMessages(target, [str(msg.get("message_id"))])
-								print("tabligh forearedi pak shod")
-							except:
-								print("err delete forwared")
-						
+							
 						elif msg.get("text") == "قوانین":
 							try:
 								rules = open("rules.txt","r",encoding='utf-8').read()
