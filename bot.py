@@ -876,6 +876,13 @@ while True:
 							except:
 								bot.sendMessage(target, "There was a problem!", message_id=msg["message_id"])
 								
+						elif msg.get("text").startswith("غزل"):
+						        try:
+							        response = get("https://api.codebazan.ir/ghazalsaadi/").text
+							        bot.sendMessage(target, response,message_id=msg.get("message_id"))
+						        except:
+							        bot.sendMessage(target, "مشکلی پیش اومد!", message_id=msg["message_id"])
+								
 						elif msg.get("text").startswith("حدیث") or msg.get("text").startswith("hadis") or msg.get("text").startswith("!hadis"):
 							try:
 								response = get("http://api.codebazan.ir/hadis/").text
