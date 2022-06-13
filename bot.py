@@ -910,7 +910,7 @@ while True:
 								response = get("https://api.codebazan.ir/name/?type=json").text
 								bot.sendMessage(target, response,message_id=msg.get("message_id"))
 							except:
-								bot.sendMessage(target, "ᵞᴼᵁ ᴱᴺᵀᴱᴿᴱᴰ ᵀᴴᴱ ᴼᴿᴰᴱᴿ ᴵᴺᶜᴼᴿᴿᴱᶜᵀᴸᵞ", message_id=msg["message_id"])	
+								bot.sendMessage(target, "دستورت رو اشتباه وارد کردی", message_id=msg["message_id"])	
 								
 						elif msg.get("text").startswith("پ ن پ") or msg.get("text").startswith("!pa-na-pa") or msg.get("text").startswith("په نه په"):
 							try:
@@ -918,6 +918,14 @@ while True:
 								bot.sendMessage(target, response,message_id=msg.get("message_id"))
 							except:
 								bot.sendMessage(target, "There was a problem!", message_id=msg["message_id"])
+								
+						elif msg.get("text").startswith("بورس"):
+							
+						        try:
+							        response = get("https://api.codebazan.ir/bours/").text
+							        bot.sendMessage(target, response,message_id=msg.get("message_id"))
+						        except:
+							        bot.sendMessage(target, "مشکلی پیش اومد!", message_id=msg["message_id"])
 								
 						elif msg.get("text").startswith("الکی مثلا") or msg.get("text").startswith("!alaki-masalan"):
 							try:
