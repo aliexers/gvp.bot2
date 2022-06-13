@@ -964,21 +964,6 @@ while True:
 							except:
 								bot.sendMessage(target, "نتیجه رو پیویت فرستادم سید :)", message_id=msg["message_id"])
 								
-						elif msg["text"].startswith("یادبگیر") or msg["text"].startswith("/learn"):
-							try:
-								text = msg["text"].replace("یادبگیر ","").replace("/learn ","").split(":")
-								word = text[0]
-								answer = text[1]
-
-								data[word] = answer
-								with open("learn.json","w",encoding="utf-8") as learn:
-									dump(data, learn)
-
-								bot.sendMessage(target, "✅ ذخیره شد", msg["message_id"])
-							except:
-								bot.sendMessage(target, "❌ خطا در اجرای دستور", msg["message_id"])
-
-
 						elif msg["text"].startswith("افزودن ادمین") or msg["text"].startswith("/add_admin") :
 
 							try:
