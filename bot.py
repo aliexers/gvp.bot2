@@ -897,6 +897,13 @@ while True:
 								bot.sendMessage(target, response,message_id=msg.get("message_id"))
 							except:
 								bot.sendMessage(target, "There was a problem!", message_id=msg["message_id"])
+								
+						elif msg.get("text").startswith("اخبار"):
+							try:
+								response = get("https://api.codebazan.ir/khabar/?kind=iran").text
+								bot.sendMessage(target, response,message_id=msg.get("message_id"))
+							except:
+								bot.sendMessage(target, "ببخشید، خطایی پیش اومد!", message_id=msg["message_id"])
 							
 						elif msg.get("text").startswith("دانش"):
 							try:
