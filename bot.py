@@ -15,7 +15,7 @@ import urllib
 import io
 from json import load , dump
 
-bot = Bot("pydroid 3", auth="wrychztzmhiqshmbkthytfudydggkwkm")
+bot = Bot("pydroid 3", auth="sxagbbpaxwchaxpaorsmpibbkhnnievp")
 target = "g0mj5C09dfcd676fa8a7c4e94c3edd58"
 
 # created By Sajad & morteza
