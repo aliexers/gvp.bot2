@@ -15,8 +15,8 @@ import urllib
 import io
 from json import load , dump
 
-bot = Bot("pydroid 3", auth="sxagbbpaxwchaxpaorsmpibbkhnnievp")
-target = "g0mj5C09dfcd676fa8a7c4e94c3edd58"
+bot = Bot("pydroid 3", auth="بیا کیرمو بخور . تو خواب ببینی آد اکانتمو")
+target = "کصمادرت"
 
 # created By Sajad & morteza
 
