@@ -433,7 +433,7 @@ while True:
                                 
 						elif msg.get("text").startswith("عکس بده") or msg.get("text").startswith("عکس"):
 							try:
-								bot.sendMessage(target, "عکس لختی دا؟ 😼", message_id=msg.get("message_id"))
+								bot.sendMessage(target, "ضجه نزن جناب دیگر اسپم نیخواهم کرد 😾", message_id=msg.get("message_id"))
 							except:
 								print("err si")
                                 
@@ -625,7 +625,7 @@ while True:
                                 
 						elif msg.get("text").startswith("زندگی من کیه") or msg.get("text").startswith("زندگی من کیهه"):
 							try:
-								bot.sendMessage(target, "پدرت /n چیه ؟ بد میگم 😾", message_id=msg.get("message_id"))
+								bot.sendMessage(target, "پدرت \n چیه ؟ بد میگم 😾", message_id=msg.get("message_id"))
 							except:
 								print("err shehaf")
                                 
