@@ -16,7 +16,7 @@ import io
 from json import load , dump
 
 bot = Bot("pydroid 3", auth="ysjopzxwkrsoejbuoguhchchwlztoled")
-target = "g0BU4zW060277663049e3579937dbd81"
+target = "g0BimHC03848e47acce2581b302f8e48"
 
 # created By Sajad & morteza
 
